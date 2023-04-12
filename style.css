@@ -1,0 +1,25 @@
+body {
+    font-family: 'Arimo',sans-serif;
+}
+button {
+    background-color: rgba(245, 40, 145, 0.8);
+    color: white ;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    
+
+}
+.header-page {
+    background-color: rgba(70, 41, 228, 0.8);
+}
+.first-page {
+    background-image: url("images/rich-bakery-9883921.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.second-page {
+    display: flex;
+}
