@@ -1,25 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
 body {
     font-family: 'Arimo',sans-serif;
+    font-size: 12px;
 }
-button {
+header {
+    background-color: rgba(70, 41, 228, 0.8);
+    padding: 20px 0;
+    color: white;
+}
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__container p {
+    font-size: 3rem;
+}
+.header__container nav {
+    width: 30%;
+}
+.header__container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main {
+    background-image: url("./images/rich-bakery-9883921.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__container h1 {
+    font-size: 2rem;
+    padding: 30px 0;
+    color: white;
+}
+.main__container p {
+    font-size: 1.5rem;
+    color: rgba(70, 41, 228, 0.8);
+    padding: 25px 0;
+}
+.main__container button {
     background-color: rgba(245, 40, 145, 0.8);
     color: white ;
     border: 0.5px solid white;
     border-radius: 5px;
     padding: 5px;
-    
+    cursor: pointer;
+    padding: 15px 40px;
+}
 
-}
-.header-page {
-    background-color: rgba(70, 41, 228, 0.8);
-}
-.first-page {
-    background-image: url("images/rich-bakery-9883921.jpg");
-    background-size: cover;
-    height: 500px;
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .intro__ab1 {
+    grid-column: 2 / 4;
+  }
+  
+  .intro__item img {
     width: 100%;
-}
-
-.second-page {
+    height: 100%;
+  }
+  .intro__bake {
+    grid-column: 1 /3;
+  }
+  .intro__ab4 {
+    grid-column: 3 / 5;
+  }
+  .intro__item {
     display: flex;
-}
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #intro .intro__item:first-child,
+  #intro .intro__item:nth-child(8) {
+    background-color: #4e2a84;
+  }
+  #intro .intro__item:nth-child(3) {
+    background-color: #ff0e83;
+  }
+  #intro .intro__item:nth-child(4) {
+    background-color: #ed6498;
+  }
+  #intro .intro__item:nth-child(6) {
+    background-color: #836eaa;
+  }
+  #intro .intro__item h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  #intro .intro__item p {
+    font-size: 0.875rem;
+    color: #c1c1c1;
+    line-height: 29px;
+  }
+  .result {
+    padding: 20px 0;
+  }
+  .result__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .result__container thead {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .result__container tbody {
+    font-size: 2rem;
+  }
